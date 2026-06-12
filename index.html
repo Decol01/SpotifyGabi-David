@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabi & David</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="overlay"></div>
+
+  <main class="player">
+    <header class="topbar">
+      <div class="spotify-mark">♪</div>
+      <div class="wave">▁▂▃▅▇▅▃▂▁</div>
+    </header>
+
+    <section class="cover-wrap">
+      <img id="mainCover" class="cover" src="./img/LoveCapa.jpg" alt="Capa principal" />
+    </section>
+
+    <section class="info-row">
+      <div class="text">
+        <h1 id="songTitle">Iris</h1>
+        <p id="artistName">Goo Goo Dolls</p>
+      </div>
+      <button class="icon-btn" id="likeBtn" aria-label="Curtir">♡</button>
+    </section>
+
+    <section class="progress-area">
+      <div class="progress-bar" id="progressBar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="time-row">
+        <span id="currentTime">0:00</span>
+        <span id="totalTime">0:00</span>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button class="icon-btn small" id="shuffleBtn" aria-label="Aleatório">⇄</button>
+      <button class="icon-btn small" id="prevBtn" aria-label="Anterior">⏮</button>
+      <button class="play-btn" id="playBtn" aria-label="Play/Pause">▶︎</button>
+      <button class="icon-btn small" id="nextBtn" aria-label="Próxima">⏭</button>
+      <button class="icon-btn small" id="repeatBtn" aria-label="Repetir">↻</button>
+    </section>
+
+    <section class="volume-area">
+      <span class="volume-label">Volume</span>
+      <input id="volumeSlider" type="range" min="0" max="100" value="45" />
+    </section>
+
+    <section class="extra-row">
+      <button class="icon-btn" id="shareBtn" aria-label="Compartilhar">↗</button>
+      <a class="music-link" id="musicLink" href="https://open.spotify.com/track/6vrUTGn5p8IrfTZ0J6sIVM?si=c06736ffe94d49bb" target="_blank">Abrir música</a>
+    </section>
+
+    <section class="gallery-section">
+      <h2>Nossos momentos</h2>
+      <div class="photo-grid" id="photoGrid"></div>
+    </section>
+
+    <footer class="footer">@David De Col</footer>
+  </main>
+
+  <audio id="audioPlayer" preload="metadata">
+    <source src="audio/iris.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
